@@ -4,7 +4,7 @@
             Hallo, <br />
             mein Name ist
             <span
-                class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600"
+                class="whitespace-nowrap text-transparent font-bold bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600"
             >
                 Moritz Müller
             </span>
