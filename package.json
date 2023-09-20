@@ -6,7 +6,7 @@
         "packages/*"
     ],
     "scripts": {
-        "dev:apps": "npm run dev -w apps",
+        "dev": "npm run dev -w apps",
         "build": "npm run build -w apps"
     },
     "devDependencies": {

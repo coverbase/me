@@ -1,19 +1,17 @@
 <template>
-    <main class="flex flex-col p-8 gap-8 mx-auto max-w-6xl w-full">
-        <header class="sticky top-0 flex justify-between items-center">
-            <TextLink to="/"> moritzmueller.co </TextLink>
+    <main class="flex flex-col p-6 sm:p-8 gap-16 mx-auto max-w-6xl w-full">
+        <header class="flex justify-between items-center">
+            <TextLink to="/" class="sm:text-lg"> moritzmueller.co </TextLink>
 
             <Button to="mailto:moritz.mueller@coverbase.co">
-                <span class="px-2"> Kontaktier mich </span>
+                <span class="px-2"> Kontakt aufnehmen </span>
             </Button>
         </header>
 
-        <div>
-            <slot />
-        </div>
+        <slot />
 
         <footer class="flex items-center justify-between">
-            <div></div>
+            <TextLink to="/impressum" variant="secondary"> Impressum </TextLink>
 
             <div class="flex gap-2">
                 <Button
