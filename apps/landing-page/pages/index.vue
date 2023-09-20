@@ -28,19 +28,27 @@
 </template>
 
 <script setup lang="ts">
+import csharp from "~/assets/csharp.svg";
+import nodejs from "~/assets/nodejs.svg";
+import nuxt from "~/assets/nuxt.svg";
+import typescript from "~/assets/typescript.svg";
+
 const skills = [
     {
-        path: "/logo/typescript.svg",
+        path: typescript,
         alt: "TypeScript",
     },
     {
-        path: "/logo/nuxt.svg",
+        path: nuxt,
         alt: "Nuxt",
     },
-
     {
-        path: "/logo/nodejs.svg",
+        path: nodejs,
         alt: "Nodejs",
+    },
+    {
+        path: csharp,
+        alt: "C#",
     },
 ];
 </script>
