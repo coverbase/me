@@ -10,8 +10,14 @@
 
         <slot />
 
-        <footer class="flex items-center justify-between">
-            <TextLink to="/impressum" variant="secondary"> Impressum </TextLink>
+        <footer class="flex flex-col sm:flex-row gap-4 items-center justify-between">
+            <div class="flex gap-2">
+                <p>Copyright {{ new Date().getFullYear() }}</p>
+
+                <p class="text-slate-400">•</p>
+
+                <TextLink to="/impressum" variant="secondary"> Impressum </TextLink>
+            </div>
 
             <div class="flex gap-2">
                 <Button

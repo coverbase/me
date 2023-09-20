@@ -19,6 +19,6 @@ withDefaults(
 
 const variants: Record<Variant, string> = {
     "primary": "hover:text-blue-500 font-semibold",
-    "secondary": "text-slate-800 hover:text-blue-500",
+    "secondary": "hover:text-blue-500",
 };
 </script>
