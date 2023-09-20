@@ -32,6 +32,7 @@ import csharp from "~/assets/csharp.svg";
 import nodejs from "~/assets/nodejs.svg";
 import nuxt from "~/assets/nuxt.svg";
 import typescript from "~/assets/typescript.svg";
+import vue from "~/assets/vue.svg";
 
 const skills = [
     {
@@ -39,16 +40,20 @@ const skills = [
         alt: "TypeScript",
     },
     {
+        path: csharp,
+        alt: "C#",
+    },
+    {
         path: nuxt,
         alt: "Nuxt",
     },
     {
-        path: nodejs,
-        alt: "Nodejs",
+        path: vue,
+        alt: "Vue",
     },
     {
-        path: csharp,
-        alt: "C#",
+        path: nodejs,
+        alt: "Nodejs",
     },
 ];
 </script>
