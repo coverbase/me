@@ -18,7 +18,8 @@ withDefaults(
 );
 
 const variants: Record<Variant, string> = {
-    "primary": "text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700",
+    "primary":
+        "text-white bg-gradient-to-rt from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 active:from-blue-600 active:to-blue-800",
     "text": "hover:bg-slate-100 active:bg-slate-200",
 };
 </script>
