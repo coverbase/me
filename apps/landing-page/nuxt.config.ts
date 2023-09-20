@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
     app: {
         head: {
-            title: "Coverbase",
+            title: "Moritz Müller - Unabhängiger Entwickler aus Deutschland",
             bodyAttrs: {
                 class: "overflow-y-scroll overflow-x-hidden bg-slate-50 font-sans text-slate-900 text-base",
             },
