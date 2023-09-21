@@ -1,18 +1,21 @@
 {
-    "name": "moritzmueller",
+    "name": "@coverbase/me",
     "private": true,
-    "workspaces": [
-        "apps/*",
-        "packages/*"
-    ],
+    "type": "module",
     "scripts": {
-        "dev": "npm run dev -w apps",
-        "build": "npm run build -w apps"
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
     },
     "devDependencies": {
-        "prettier": "^3.0.3",
-        "prettier-plugin-tailwindcss": "^0.5.4",
-        "typescript": "^5.2.2",
-        "unocss": "^0.56.0"
+        "@unocss/nuxt": "^0.56.0",
+        "@unocss/reset": "^0.56.0",
+        "nuxt": "^3.7.3"
+    },
+    "dependencies": {
+        "@tabler/icons-vue": "^2.34.0",
+        "@vueuse/nuxt": "^10.4.1"
     }
 }

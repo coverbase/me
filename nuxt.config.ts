@@ -11,28 +11,11 @@ export default defineNuxtConfig({
         },
     },
 
-    unocss: {
-        safelist: [
-            "overflow-y-scroll",
-            "overflow-x-hidden",
-            "font-sans",
-            "text-slate-900",
-            "text-base",
-            "bg-slate-50",
-        ],
-    },
-
     vite: {
         vue: {
             script: {
                 defineModel: true,
             },
-        },
-    },
-
-    $production: {
-        nitro: {
-            preset: "cloudflare-pages",
         },
     },
 });
