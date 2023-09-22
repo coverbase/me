@@ -3,17 +3,13 @@
         <h1 class="text-4xl">
             Hallo, <br />
             mein Name ist
-            <span
-                class="whitespace-nowrap text-transparent font-bold bg-clip-text bg-gradient-to-rt from-blue-400 to-blue-600"
-            >
-                Moritz Müller
-            </span>
+            <Mark variant="gradient" class="whitespace-nowrap font-bold"> Moritz Müller </Mark>
         </h1>
 
-        <p class="text-slate-400 text-lg">
+        <Paragraph class="text-lg">
             Ich bin ein unabhängiger Entwickler aus <br />
             Nordrhein-Westfalen, Deutschland.
-        </p>
+        </Paragraph>
     </section>
 
     <section class="flex flex-wrap gap-12">

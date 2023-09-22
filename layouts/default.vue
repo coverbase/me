@@ -1,9 +1,9 @@
 <template>
     <main class="flex flex-col p-6 sm:p-8 gap-16 mx-auto max-w-6xl w-full">
         <header class="flex justify-between items-center">
-            <TextLink to="/" class="sm:text-lg"> moritzmueller.co </TextLink>
+            <TextLink to="/" class="font-semibold sm:text-lg"> moritzmueller.co </TextLink>
 
-            <Button to="mailto:moritz.mueller@coverbase.co">
+            <Button variant="gradient" to="mailto:moritz.mueller@coverbase.co">
                 <span class="px-2"> Kontakt aufnehmen </span>
             </Button>
         </header>
@@ -14,9 +14,9 @@
             <div class="flex gap-2">
                 <p>Copyright {{ new Date().getFullYear() }}</p>
 
-                <p class="text-slate-400">•</p>
+                <Paragraph> • </Paragraph>
 
-                <TextLink to="/impressum" variant="secondary"> Impressum </TextLink>
+                <TextLink to="/impressum"> Impressum </TextLink>
             </div>
 
             <div class="flex gap-2">
