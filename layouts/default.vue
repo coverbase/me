@@ -1,13 +1,11 @@
 <template>
     <main class="flex flex-col p-6 sm:p-8 gap-16 mx-auto max-w-6xl w-full">
         <header class="flex justify-between items-center">
-            <TextLink to="/" class="font-semibold sm:text-lg" :as="NuxtLink">
-                moritzmueller.co
-            </TextLink>
+            <ULink to="/" class="font-semibold sm:text-lg" :as="NuxtLink"> moritzmueller.co </ULink>
 
-            <Button variant="gradient" to="mailto:moritz.mueller@coverbase.co" :as="NuxtLink">
+            <UButton to="mailto:moritz.mueller@coverbase.co" :as="NuxtLink">
                 <span class="px-2"> Kontakt aufnehmen </span>
-            </Button>
+            </UButton>
         </header>
 
         <slot />
@@ -16,38 +14,38 @@
             <div class="flex gap-2">
                 <p>Copyright {{ new Date().getFullYear() }}</p>
 
-                <Paragraph> • </Paragraph>
+                <UParagraph> • </UParagraph>
 
-                <TextLink to="/impressum" :as="NuxtLink"> Impressum </TextLink>
+                <ULink to="/impressum" :as="NuxtLink"> Impressum </ULink>
             </div>
 
             <div class="flex gap-2">
-                <Button
+                <UButton
                     variant="text"
                     target="_blank"
                     to="https://www.upwork.com/freelancers/~01fe4721aa96758f98"
                     :as="NuxtLink"
                 >
                     <IconBrandUpwork />
-                </Button>
+                </UButton>
 
-                <Button
+                <UButton
                     variant="text"
                     target="_blank"
                     to="https://www.linkedin.com/in/moritz-m%C3%BCller-92b830282/"
                     :as="NuxtLink"
                 >
                     <IconBrandLinkedin />
-                </Button>
+                </UButton>
 
-                <Button
+                <UButton
                     variant="text"
                     target="_blank"
                     to="https://github.com/moritz-mm"
                     :as="NuxtLink"
                 >
                     <IconBrandGithub />
-                </Button>
+                </UButton>
             </div>
         </footer>
     </main>

@@ -12,7 +12,7 @@
         "nuxt": "^3.7.1"
     },
     "dependencies": {
-        "@coverbase/ui": "^0.0.15",
+        "@coverbase/ui": "^0.0.16",
         "@tabler/icons-vue": "^2.33.0"
     }
 }
