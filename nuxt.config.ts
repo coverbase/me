@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
     modules: ["@coverbase/ui"],
 
+    devtools: {
+        enabled: false,
+    },
+
     vite: {
         vue: {
             script: {

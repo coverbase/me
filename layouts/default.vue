@@ -41,6 +41,15 @@
                 <UButton
                     variant="text"
                     target="_blank"
+                    to="https://twitter.com/MoritzMlle93585"
+                    :as="NuxtLink"
+                >
+                    <IconBrandX />
+                </UButton>
+
+                <UButton
+                    variant="text"
+                    target="_blank"
                     to="https://github.com/moritz-mm"
                     :as="NuxtLink"
                 >
@@ -53,5 +62,5 @@
 
 <script setup lang="ts">
 import { NuxtLink } from "#components";
-import { IconBrandGithub, IconBrandLinkedin, IconBrandUpwork } from "@tabler/icons-vue";
+import { IconBrandGithub, IconBrandLinkedin, IconBrandUpwork, IconBrandX } from "@tabler/icons-vue";
 </script>

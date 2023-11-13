@@ -1,6 +1,7 @@
 {
-    "name": "@coverbase/me",
+    "name": "me",
     "private": true,
+    "type": "module",
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
@@ -9,10 +10,10 @@
         "postinstall": "nuxt prepare"
     },
     "devDependencies": {
-        "nuxt": "^3.7.1"
+        "nuxt": "^3.8.1"
     },
     "dependencies": {
-        "@coverbase/ui": "^0.0.16",
+        "@coverbase/ui": "^0.0.35",
         "@tabler/icons-vue": "^2.33.0"
     }
 }

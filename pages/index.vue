@@ -13,11 +13,11 @@
     </section>
 
     <section class="flex flex-wrap gap-12">
-        <figure class="flex flex-col gap-4 items-center" v-for="skill in skills">
-            <img width="60" height="60" class="m-auto" :alt="skill.alt" :src="skill.path" />
+        <figure class="flex flex-col gap-4 items-center" v-for="{ alt, path } in skills">
+            <img width="60" height="60" class="m-auto" :alt="alt" :src="path" />
 
             <figcaption class="font-semibold">
-                {{ skill.alt }}
+                {{ alt }}
             </figcaption>
         </figure>
     </section>

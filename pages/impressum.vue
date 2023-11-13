@@ -1,1 +1,1 @@
-<template>Impressum</template>
+<template></template>
