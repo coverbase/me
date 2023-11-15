@@ -13,10 +13,6 @@
         <footer class="flex flex-col sm:flex-row gap-4 items-center justify-between">
             <div class="flex gap-2">
                 <p>Copyright {{ new Date().getFullYear() }}</p>
-
-                <UParagraph> • </UParagraph>
-
-                <ULink to="/impressum" :as="NuxtLink"> Impressum </ULink>
             </div>
 
             <div class="flex gap-2">
