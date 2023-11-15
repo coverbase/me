@@ -38,12 +38,7 @@
                     <IconBrandLinkedin />
                 </UButton>
 
-                <UButton
-                    variant="text"
-                    target="_blank"
-                    to="https://twitter.com/MoritzMlle93585"
-                    :as="NuxtLink"
-                >
+                <UButton variant="text" target="_blank" to="https://x.com/moritzmla" :as="NuxtLink">
                     <IconBrandX />
                 </UButton>
 
