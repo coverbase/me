@@ -10,10 +10,9 @@
         "postinstall": "nuxt prepare"
     },
     "devDependencies": {
-        "nuxt": "^3.8.1"
-    },
-    "dependencies": {
-        "@coverbase/ui": "^0.0.35",
-        "@tabler/icons-vue": "^2.33.0"
+        "@tabler/icons-vue": "^2.44.0",
+        "@unocss/nuxt": "^0.58.0",
+        "@unocss/reset": "^0.58.0",
+        "nuxt": "^3.9.0"
     }
 }

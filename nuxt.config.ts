@@ -1,25 +1,19 @@
 export default defineNuxtConfig({
-    modules: ["@coverbase/ui"],
+    modules: ["@unocss/nuxt"],
 
     devtools: {
         enabled: false,
     },
 
-    vite: {
-        vue: {
-            script: {
-                defineModel: true,
-            },
-        },
-    },
+    css: ["@unocss/reset/tailwind.css"],
 
     unocss: {
         safelist: [
             "overflow-y-scroll",
             "overflow-x-hidden",
             "font-sans",
-            "text-slate-900",
             "text-base",
+            "text-slate-900",
             "bg-slate-50",
         ],
     },

@@ -6,10 +6,10 @@
             <strong class="whitespace-nowrap font-bold"> Moritz Müller </strong>
         </h1>
 
-        <UParagraph class="text-lg">
+        <p class="text-slate-500 text-lg">
             Ich bin ein unabhängiger Entwickler aus <br />
             Nordrhein-Westfalen, Deutschland.
-        </UParagraph>
+        </p>
     </section>
 
     <section class="flex flex-wrap gap-12">
@@ -21,38 +21,9 @@
             </figcaption>
         </figure>
     </section>
-
-    <UDivider />
-
-    <UHeading class="text-center"> Projekte </UHeading>
-
-    <section class="grid sm:grid-cols-2 gap-4">
-        <div
-            class="flex items-start gap-4 bg-white shadow-sm p-4 rounded"
-            v-for="project in projects"
-        >
-            <div class="p-4 bg-slate-100 rounded">
-                <component :is="project.icon" />
-            </div>
-
-            <div class="flex flex-col">
-                <ULink
-                    target="_blank"
-                    class="font-semibold text-lg"
-                    :to="project.route"
-                    :as="NuxtLink"
-                >
-                    {{ project.title }}
-                </ULink>
-
-                <UParagraph> {{ project.description }} </UParagraph>
-            </div>
-        </div>
-    </section>
 </template>
 
 <script setup lang="ts">
-import { NuxtLink } from "#components";
 import { IconFileTypeSvg, IconPalette } from "@tabler/icons-vue";
 import csharp from "~/assets/csharp.svg";
 import nodejs from "~/assets/nodejs.svg";
