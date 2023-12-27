@@ -17,6 +17,15 @@
                 <UiButton
                     variant="text"
                     target="_blank"
+                    to="https://www.linkedin.com/in/moritzmla/"
+                    :as="NuxtLink"
+                >
+                    <IconBrandLinkedin />
+                </UiButton>
+
+                <UiButton
+                    variant="text"
+                    target="_blank"
                     to="https://x.com/moritzmla"
                     :as="NuxtLink"
                 >
@@ -38,5 +47,5 @@
 
 <script setup lang="ts">
 import { NuxtLink } from "#components";
-import { IconBrandGithub, IconBrandX } from "@tabler/icons-vue";
+import { IconBrandGithub, IconBrandLinkedin, IconBrandX } from "@tabler/icons-vue";
 </script>
