@@ -17,28 +17,11 @@
                 <UiButton
                     variant="text"
                     target="_blank"
-                    to="https://www.linkedin.com/in/moritzmla/"
+                    :to="social.url"
                     :as="NuxtLink"
+                    v-for="social in socials"
                 >
-                    <IconBrandLinkedin />
-                </UiButton>
-
-                <UiButton
-                    variant="text"
-                    target="_blank"
-                    to="https://x.com/moritzmla"
-                    :as="NuxtLink"
-                >
-                    <IconBrandX />
-                </UiButton>
-
-                <UiButton
-                    variant="text"
-                    target="_blank"
-                    to="https://github.com/moritzmla"
-                    :as="NuxtLink"
-                >
-                    <IconBrandGithub />
+                    <component :is="social.icon" />
                 </UiButton>
             </div>
         </footer>
@@ -47,5 +30,6 @@
 
 <script setup lang="ts">
 import { NuxtLink } from "#components";
-import { IconBrandGithub, IconBrandLinkedin, IconBrandX } from "@tabler/icons-vue";
+
+const { socials } = useAppConfig();
 </script>

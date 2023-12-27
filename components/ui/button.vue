@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import type { Component } from "vue";
 
-type Variant = "primary" | "secondary" | "highlight" | "text";
+type Variant = "primary" | "text";
 
 withDefaults(
     defineProps<{
