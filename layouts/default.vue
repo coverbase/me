@@ -1,7 +1,7 @@
 <template>
     <main class="flex flex-col p-6 sm:p-8 gap-16 mx-auto max-w-6xl w-full">
         <header class="flex justify-between items-center">
-            <UiLink to="/" class="font-semibold sm:text-lg"> moritzmueller.co </UiLink>
+            <UiLink to="/" class="font-semibold sm:text-lg"> moritzmla.co </UiLink>
 
             <UiButton to="mailto:moritz.mueller@coverbase.co" :as="NuxtLink">
                 <span class="px-2"> Kontakt aufnehmen </span>
