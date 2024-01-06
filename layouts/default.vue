@@ -1,7 +1,7 @@
 <template>
-    <main class="flex flex-col p-6 sm:p-8 gap-16 mx-auto max-w-6xl w-full">
+    <main class="flex flex-col p-6 gap-12 mx-auto max-w-5xl w-full">
         <header class="flex justify-between items-center">
-            <UiLink to="/" class="font-semibold sm:text-lg"> moritzmla.co </UiLink>
+            <UiLink to="/" class="font-semibold text-lg"> moritzmla.co </UiLink>
 
             <UiButton to="mailto:moritz.mueller@coverbase.co" :as="NuxtLink">
                 <span class="px-2"> Kontakt aufnehmen </span>
@@ -10,18 +10,19 @@
 
         <slot />
 
-        <footer class="flex flex-col sm:flex-row gap-4 items-center justify-between">
+        <footer class="flex flex-col md:flex-row gap-4 items-center justify-between">
             <p>Copyright {{ new Date().getFullYear() }}</p>
 
             <div class="flex gap-2">
                 <UiButton
                     variant="text"
                     target="_blank"
-                    :to="social.url"
+                    :aria-label="name"
+                    :to="url"
                     :as="NuxtLink"
-                    v-for="social in socials"
+                    v-for="{ url, name, icon } in socials"
                 >
-                    <component :is="social.icon" />
+                    <component :is="icon" />
                 </UiButton>
             </div>
         </footer>

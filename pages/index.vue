@@ -21,8 +21,27 @@
             </figcaption>
         </figure>
     </section>
+
+    <section class="flex flex-col gap-4">
+        <h2 class="text-2xl">Meine Projekte</h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+            <div
+                class="border border-slate-200 shadow-sm p-6 rounded-lg"
+                v-for="{ url, name, description } in projects"
+            >
+                <UiLink class="font-semibold text-lg" target="_blank" :to="url">
+                    {{ name }}
+                </UiLink>
+
+                <p class="text-slate-600">
+                    {{ description }}
+                </p>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script setup lang="ts">
-const { skills } = useAppConfig();
+const { skills, projects } = useAppConfig();
 </script>

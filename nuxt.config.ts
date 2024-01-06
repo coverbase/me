@@ -21,6 +21,10 @@ export default defineNuxtConfig({
     app: {
         head: {
             title: "Moritz Müller - Unabhängiger Entwickler aus Deutschland",
+            meta: [{ name: "description", content: "Mein persönliches Portfolio." }],
+            htmlAttrs: {
+                lang: "de",
+            },
             bodyAttrs: {
                 class: "overflow-y-scroll overflow-x-hidden bg-slate-50 font-sans text-slate-900 text-base",
             },
